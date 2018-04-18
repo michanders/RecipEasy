@@ -9,6 +9,11 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
 
-  get '/show' => 'recipes#show'
+  get '/favorites' => 'users#show'
+
+  get '/search' => 'recipes#index'
+  post '/search' => 'recipes#index'
+
+  get '/details' => 'recipes#show'
 
 end

@@ -1,7 +1,7 @@
 <nav class="navbar">
   <%if current_user%>
-      <h4>Signed in as <%= current_user.username %> | <%= link_to "Home", '/' %> | <%= link_to "Logout", '/logout' %></h4>
+      <h4>Signed in as <%= current_user.username %> | <%= link_to "Home", '/' %> | <%= link_to "Logout", '/logout' %> | <%= link_to "Favorite Recipes", '/favorites' %></h4>
   <%else%>
-    <%= link_to 'Signup', '/signup' %> | <%= link_to 'Login', '/login' %> | <%= link_to "User Home", root_path %><br><br>
+    <%= link_to 'Signup', '/signup' %> | <%= link_to 'Login', '/login' %> | <%= link_to "Search", root_path %><br><br>
   <%end%>
 </nav>
