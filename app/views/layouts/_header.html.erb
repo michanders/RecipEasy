@@ -1,7 +1,18 @@
-<nav class="navbar">
-  <%if current_user%>
-      <h4>Signed in as <%= current_user.username %> | <%= link_to "Home", '/' %> | <%= link_to "Logout", '/logout' %> | <%= link_to "Favorite Recipes", '/favorites' %></h4>
-  <%else%>
-    <%= link_to 'Signup', '/signup' %> | <%= link_to 'Login', '/login' %> | <%= link_to "Search", root_path %><br><br>
-  <%end%>
-</nav>
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Nav
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <%if current_user%>
+        <a href="/">Home</a>
+        <a href="/logout">Logout</a>
+        <a href="/favorites">Favorites</a>
+      <%else%>
+        <a href="/signup">Signup</a>
+        <a href="/login">Login</a>
+        <a href="/">Search</a>
+      <%end%>
+    </div>
+  </div>
+</div>

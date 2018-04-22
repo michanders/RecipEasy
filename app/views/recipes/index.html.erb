@@ -2,7 +2,7 @@
   <h3><%= obj["title"] %></h3><br><br>
   <img class="img" src="<%=obj["image_url"]%>" >
   <form action='/details'>
-    <input type='radio' name='details' value= "<%=obj["recipe_id"]%>" >
-    <input type="submit" value="Get Recipe"><br><br>
+      <input type='checkbox' name='details' value= "<%=obj["recipe_id"]%>" >
+      <input type="submit" value="Get Recipe"><br><br>
   </form><br>
 <% end %><br><br>

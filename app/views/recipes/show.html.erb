@@ -1,10 +1,12 @@
-<h3>Ingredients for <%= @details["recipe"]["title"] %>:</h3><br><br>
+<h2>Ingredients for <%= @details["recipe"]["title"] %>:</h2><br><br>
 <% @details["recipe"].each do |obj, value| %>
   <% if obj === "ingredients" %>
-    <ul class = "recipe">
-    <% value.each do |ingredient| %>
-      <li><%=ingredient%></li><br>
-    <% end %>
+    <ul>
+      <% value.each do |ingredient| %>
+      <div class = "recipe">
+        <li><%=ingredient%></li><br>
+        <% end %>
+      </div>
     </ul>
   <% end %>
 <% end %>
