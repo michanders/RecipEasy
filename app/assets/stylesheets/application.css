@@ -15,108 +15,115 @@
  */
 
  header {
-  position: fixed;
-}
+   position: fixed;
+ }
 
-body {
-  max-width: auto;
-  margin: auto;
+ body {
+   max-width: auto;
+   margin: auto;
+   text-align: center;
+   font-family: "Segoe UI";
+ }
+
+ div.recipe {
+   max-width: 400px;
+   margin: auto;
+ }
+
+ .img {
+  max-width: 300px;
+  max-height: 300px;
+ }
+
+ input#search, #username, #password,
+ #user_username, #user_password, #user_password_confirmation {
+   width: 250px;
+   height: 25px;
+   background-color: white;
+   border: 1px solid lightgrey;
+   box-shadow: 1px 2px lightgray;
+   text-align: center;
+ }
+
+ input {
+   width: 100px;
+   height: 25px;
+   margin: 3px;
+   border: none;
+   outline: none;
+ }
+
+ button {
+   border: none;
+   background-color: white;
+ }
+
+ h3 {
+   display: inline;
+ }
+
+ h1, h2 {
+   display: inline;
+ }
+
+ .navbar {
+  overflow: hidden;
+  font-family: Arial;
+  margin: 10px;
+ }
+
+ .navbar a {
+  float: left;
+  font-size: 16px;
   text-align: center;
-  font-family: "Segoe UI";
-}
+  padding: 14px 16px;
+  text-decoration: none;
+ }
 
-div.recipe {
-  max-width: 400px;
-  margin: auto;
-}
+ .dropdown {
+  float: left;
+  overflow: hidden;
+  background-color: lightgray;
+ }
 
-.img {
- max-width: 300px;
- max-height: 300px;
-}
-
-input#search, #username, #password,
-#user_username, #user_password, #user_password_confirmation {
-  width: 250px;
-  height: 25px;
-  background-color: white;
-  border: 1px solid lightgrey;
-  box-shadow: 2px 2px lightgray;
-  text-align: center;
-}
-
-input {
-  width: 100px;
-  height: 25px;
-  margin: 2px;
-}
-
-h3 {
-  display: inline;
-}
-
-h1, h2 {
-  display: inline;
-}
-
-.navbar {
- overflow: hidden;
- font-family: Arial;
- margin: 10px;
-}
-
-.navbar a {
- float: left;
- font-size: 16px;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;
-}
-
-.dropdown {
- float: left;
- overflow: hidden;
- background-color: lightgray;
-}
-
-.dropdown .dropbtn {
- font-size: 16px;
- border: none;
- outline: none;
- padding: 14px 16px;
- background-color: inherit;
- font-family: inherit;
- margin: 0;
-}
+ .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+ }
 
 
-.navbar a:hover, .dropdown:hover .dropbtn {
- background-color: lightgreen;
-}
+ .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgreen;
+ }
 
-.dropdown-content {
- display: none;
- position: absolute;
- background-color: #f9f9f9;
- min-width: 160px;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
-}
+ .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ }
 
-.dropdown-content a {
- float: none;
- color: black;
- padding: 12px 16px;
- text-decoration: none;
- display: block;
- text-align: left;
-}
+ .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+ }
 
-.dropdown-content a:hover {
- background-color: skyblue;
-}
+ .dropdown-content a:hover {
+  background-color: skyblue;
+ }
 
 
-.dropdown:hover .dropdown-content {
- display: block;
-}
+ .dropdown:hover .dropdown-content {
+  display: block;
+ }

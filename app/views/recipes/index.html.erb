@@ -1,8 +1,6 @@
 <% @recipe["recipes"].each do |obj| %>
-  <h3><%= obj["title"] %></h3><br><br>
-  <img class="img" src="<%=obj["image_url"]%>" >
+  <h3><%= obj["title"] %></h3><br>
   <form action='/details'>
-      <input type='checkbox' name='details' value= "<%=obj["recipe_id"]%>" >
-      <input type="submit" value="Get Recipe"><br><br>
+      <button type="submit" title="link to ingredients" name='details' value="<%=obj["recipe_id"]%>"><img class="img" src="<%=obj["image_url"]%>" ></button><br><br>
   </form><br>
 <% end %><br><br>
